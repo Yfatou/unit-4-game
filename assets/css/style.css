@@ -3,6 +3,25 @@ body {
     background: url("/unit-4-game/assets/images/background_img.jpg");
 }
 
+img{
+    height: 90px;
+    width: 65px;
+}
+
+.game-title{
+    background-color: chocolate;
+    color: white;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.game-directions{
+    background-color: bisque;
+    color: seagreen;
+    padding: 0px;
+}
+
 #showRandomNumber{
     border-style: solid;
 }
