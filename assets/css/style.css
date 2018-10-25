@@ -1,0 +1,12 @@
+
+body {
+    background: url("/unit-4-game/assets/images/background_img.jpg");
+}
+
+#showRandomNumber{
+    border-style: solid;
+}
+
+#showScore{
+    border-style: solid;
+}
