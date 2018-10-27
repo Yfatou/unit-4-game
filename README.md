@@ -5,7 +5,7 @@ This is the Crystlas collector game.
 ### How to play
 *At the beginning of the game the computer randomly choose a number between 19 and 120.
 
-*There is 3 crystals and each of them has a random value between 1 and 12 unknown by the player.
+*There are 3 crystals and each of them has a random value between 1 and 12 unknown by the player.
 
 *The purpose of the game is to match the number choosen by the computer :
     *each time the player click on a crystal, the value of this crystal is added to the current score of the player,
