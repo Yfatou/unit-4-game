@@ -46,24 +46,48 @@ p{
     height: 100px;
     font-size: 50px;
     background-color: seagreen;
-    float: left;
-    clear: both;
+
 }
 
-#showResult{
-    /* float: left; */
-    /* overflow: hidden; */
-    height: 40px;
-    float: right;
+#win-area {
+    height: 100px;
+    width: 80px;
+    padding: 4px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: aqua;
 }
+
 
 #score{
-    overflow: hidden;
+    overflow: auto;
 }
+
+
+#showRandomNumber,
+#win-area,
+#showResult{
+    float: left;
+}
+
 
 #showScore{
     background-color: teal;
     color: white;
     width: 250px;
     font-size: 30px;
+}
+
+#showWins{
+    position: relative;
+    float: right;
+    width: 10px;
+    top: -30px;
+}
+
+#showLosses{
+    position: relative;
+    float: right;
+    width: 10px;
+    top: -30px;
 }

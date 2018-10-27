@@ -29,57 +29,38 @@
                     <br>
                     <p> You will be given a random number at the start of the game.</p>
                     <p>There are four crystals below. By clicking on a crystal, you will add a 
-                    specific amount of points to your yoyal score.</p>
+                    specific amount of points to your total score.</p>
                     <p>You win the game by matching your total score to random number, you lose the game if your
                     total score goes above the random number.</p>
                     <p>The value of each crystal is hidden from you until you click on it.</p>
                     <p>Each time when the game starts, the game will change the value of each crystal.</p>
-            </div>
+                </div>
                 <div class="col-md-4"></div>
             </div>
             <div class="col-md-2"></div>
         </div>
+
         <!-- Random number and wins/losses row -->
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8 pl-0">
                 <div id="score">
-                    <div class="col-md-8 pl-0">
-                        <div class="col-md-8 pl-0">
                         <!-- Div to show the random number -->
                         <div id="showRandomNumber"></div>
-                        </div>
-                        <div class="col-md-4 pt-2">
-                                <!-- To tell the player the result of the current game -->
-                                <div id="showResult"></div>
-            
-                                <!-- <div> -->
-                                    <!-- To show the number or wins -->
-                                    <h5 class="wins-section">Wins:</h5>
-                                    <div id="showWins"></div>
-                                <!-- </div> -->
-                                <!-- <div> -->
-                                    <!-- To show the number of losses -->
-                                    <h5 class="losses-section">Losses:</h5>
-                                    <div id="showLosses"></div>
-                                <!-- </div> -->
-                            </div>  
-                    </div>
-                    <!-- <div class="col-md-4"> -->
-                        <!-- To tell the player the result of the current game -->
-                        <!-- <div id="showResult"></div> -->
-    
-                        <!-- <div> -->
+                  
+                        <div id="win-area">
+                            <!-- To tell the player the result of the current game -->
+                            <div id="showResult"></div>
+                            
                             <!-- To show the number or wins -->
-                            <!-- <h5 class="wins-section">Wins:</h5> -->
-                            <!-- <div id="showWins"></div> -->
-                        <!-- </div> -->
-                        <!-- <div> -->
+                            <h6 class="wins-section">Wins:</h6>
+                            <div id="showWins">0</div>
+                            
                             <!-- To show the number of losses -->
-                            <!-- <h5 class="losses-section">Losses:</h5> -->
-                            <!-- <div id="showLosses"></div> -->
-                        <!-- </div> -->
-                    <!-- </div>   -->
+                            <h6 class="losses-section">Losses:</h6>
+                            <div id="showLosses">0</div>
+                        </div>
+            
                 </div>
             </div>
             <div class="col-md-2"></div>
