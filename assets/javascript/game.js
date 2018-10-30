@@ -9,16 +9,16 @@ var playerTotalPoints = 0; //total points of the player
 
 //random number for the value of the red crystal between 1 and 12
 var redCrystalValue = Math.floor(Math.random()*12)+1; 
-console.log("redValue: " + redCrystalValue);
+
 //random number for the value of the blue crystal between 1 and 12
 var blueCrystalValue = Math.floor(Math.random()*12)+1; 
-console.log("blueValue: " + blueCrystalValue);
+
 //random number for the value of the yellow crystal between 1 and 12
 var yellowCrystalValue = Math.floor(Math.random()*12)+1; 
-console.log("yellowValue: " + yellowCrystalValue);
+
 //random number for the value of the green crystal between 1 and 12
 var greenCrystalValue = Math.floor(Math.random()*12)+1; 
-console.log("greenValue: " + greenCrystalValue);
+
 
 $(document).ready(function() {
 
@@ -33,7 +33,6 @@ function resetGame(){
     $("#showScore").html(playerTotalPoints);
     randomNumberToMatch = Math.floor(Math.random()*101)+19;
     $("#showRandomNumber").html(randomNumberToMatch);
-    console.log(randomNumberToMatch);
     redCrystalValue = Math.floor(Math.random()*12)+1; 
     blueCrystalValue = Math.floor(Math.random()*12)+1; 
     yellowCrystalValue = Math.floor(Math.random()*12)+1; 
@@ -63,33 +62,25 @@ function startGame() {
     $("#showScore").html(playerTotalPoints);
 
     $("#redCrystal").click(function() { //When the player click on the red crystal
-        console.log("red value before add: " + redCrystalValue);
         playerTotalPoints += redCrystalValue; //the value of the crystal is added to the total points 
-        console.log(playerTotalPoints);
         $("#showScore").html(playerTotalPoints);//and displayed in the total score section
         checkWinLoss(); //we call the check function to see if there is a win or loss
     });
 
     $("#blueCrystal").click(function() { //When the player click on the blue crystal
-        console.log("blue value before add: " + blueCrystalValue);
         playerTotalPoints += blueCrystalValue; //the value of the crystal is added to the total points
-        console.log(playerTotalPoints);
         $("#showScore").html(playerTotalPoints); //and displayed in the total score section
         checkWinLoss(); //we call the check function to see if there is a win or loss
     });
 
-    $("#yellowCrystal").click(function() { //When the player click on the yellow crystal
-        console.log("yellow value before add: " + yellowCrystalValue);
+    $("#yellowCrystal").click(function() { //When the player click on the yellow crystal   
         playerTotalPoints += yellowCrystalValue; //the value of the crystal is added to the total points
-        console.log(playerTotalPoints);
         $("#showScore").html(playerTotalPoints); //and displayed in the total score section
         checkWinLoss(); //we call the check function to see if there is a win or loss
     });
 
     $("#greenCrystal").click(function() { //When the player click on the green crystal
-        console.log("green value before add: " + greenCrystalValue);
         playerTotalPoints += greenCrystalValue; //the value of the crystal is added to the total points
-        console.log(playerTotalPoints);
         $("#showScore").html(playerTotalPoints); //and displayed in the total score section
         checkWinLoss(); //we call the check function to see if there is a win or loss
     });
